@@ -3,7 +3,8 @@ package squareMap
 type Direction int
 
 const (
-	NORTH Direction = iota
+	NONE Direction = iota
+	NORTH
 	SOUTH
 	EAST
 	WEST

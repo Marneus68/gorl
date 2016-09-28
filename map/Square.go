@@ -1,5 +1,8 @@
 package squareMap
 
+type SquareContent struct {
+}
+
 type Square struct {
 	North *Square
 	South *Square
@@ -8,7 +11,7 @@ type Square struct {
 	Up    *Square
 	Down  *Square
 
-	Content interface{}
+	Content []SquareContent
 }
 
 func New2DSquare(n, s, e, w *Square) (square *Square) {
